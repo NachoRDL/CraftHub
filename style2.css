@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.navbar #company-name {
+    padding: 14px 16px;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.hidden-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 3;
+}
+
+#box-close-btn-news,
+#box-close-btn-contact,
+#box-close-btn-about {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#info-box-news p,
+#info-box-contact p,
+#info-box-about p {
+    margin: 10px 0;
+}
+
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; 
+    padding: 20px;
+}
+
+
+.bolsa_solita- {
+    text-align: center;
+}
+
+.bolsa_solita- img {
+    width: 400px; 
+    height: auto; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.bolsa_solita- img:hover {
+    transform: scale(1.1); 
+}
+
+.bolsa_2_ {
+    text-align: center;
+}
+
+.bolsa_2_ img {
+    width: 400px; 
+    height: auto; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.bolsa_2_  img:hover {
+    transform: scale(1.1); 
+}
+
+.caja_sola_ {
+    text-align: center;
+}
+
+.caja_sola_ img {
+    width: 400px; 
+    height: auto; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.caja_sola_ img:hover {
+    transform: scale(1.1); 
+}
+
+.caja_sola_2 {
+    text-align: center;
+}
+
+.caja_sola_2 img {
+    width: 400px;
+    height: auto; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.caja_sola_2 img:hover {
+    transform: scale(1.1); 
+}
+
+.icon-container i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.icon-container p {
+    font-size: 14px;
+    color: #333; 
+    margin-top: 5px; 
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 20px;
+    color: #333; 
+}
+
+

@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.navbar #company-name {
+    padding: 14px 16px;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.hero {
+    background-image: url('cajas.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white;
+}
+
+.options-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    animation: fadeInAndFall 2s ease-in-out forwards, fadeIn 2s ease-in-out forwards;
+}
+
+.vision-mission-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    animation: fadeInAndFall 2s ease-in-out forwards, fadeIn 2s ease-in-out forwards;
+}
+
+.vision-mission {
+    text-align: center;
+    margin: 20px;
+}
+
+@keyframes fadeInAndFall {
+    from {
+        opacity: 0;
+        transform: translateY(-100vh);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.icon {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon img {
+    width: 50px;
+}
+
+.icon i {
+    font-size: 2em;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.hidden-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 3;
+    animation: fadeInInfoBox 1s ease-in-out forwards;
+}
+
+#box-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+#info-box p {
+    margin: 10px 0;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-title {
+    font-size: 3em;
+    color: white;
+}
+
+.hero-description {
+    font-size: 1.5em;
+    color: #eee;
+}
+
+#info-box {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+@keyframes fadeInInfoBox {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0; 
+    width: 100%; 
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #555;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px; 
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px; 
+    height: auto;
+}
+
+
+
+
+
+
+
