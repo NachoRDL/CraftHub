@@ -24,19 +24,48 @@
 
     <h1 class="section-title">COMBOS</h1>
 
-    <div class="icon-container">
+    <div class="container">
         <div class="combo_1-">
             <img src="combo_1-.png" alt="">
             <i class="fas fa-cog"></i>
             <p></p>
         </div>
 
-        <div class="icon-container">
-            <div class="combo_2-">
-                <img src="combo_2-.png" alt="">
-                <i class="fas fa-cog"></i>
-                <p></p>
-            </div>
+        <div class="combo_2-">
+            <img src="combo_2-.png" alt="">
+            <i class="fas fa-cog"></i>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <h2 class="titulo">Envio de Formulario</h2>
+        <form action="https://formsubmit.co/crafthub2024@gmail.com" method="POST" enctype="multipart/form-data">
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="name">
+    
+            <label for="email">Correo Electronico</label>
+            <input type="email" name="email">
+    
+            <label for="subject">Asunto</label>
+            <input type="text" name="subject">
+
+            <label for="subject">Numero de telefono</label>
+            <input type="tel" name="cell phone">
+    
+            <label for="comments">Comentarios (Dinos que deseas y te armamos tu combo!)</label>
+            <textarea name="comments" cols="15" rows="5"></textarea>
+    
+            <label for="adjunto">Adjuntar Archivo (LOGO O IMAGEN DE TU EMPRESA)</label>
+            <input type="file" name="adjunto">
+    
+            <input type="submit" value="Enviar">
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <br>
 
 </body>
 </html>

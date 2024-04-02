@@ -20,3 +20,27 @@ function closeBox(title) {
 }
 
 
+let cartItems = [];
+let cartCounter = document.getElementById('cart-counter');
+
+function addToCart(productName) {
+    cartItems.push(productName);
+    renderCart();
+    updateCartCounter();
+}
+
+function renderCart() {
+    const cartElement = document.getElementById('cart');
+    cartElement.innerHTML = '';
+    cartItems.forEach(item => {
+        const itemElement = document.createElement('div');
+        itemElement.textContent = item;
+        cartElement.appendChild(itemElement);
+    });
+}
+
+function updateCartCounter() {
+    cartCounter.textContent = cartItems.length;
+}
+
+

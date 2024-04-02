@@ -30,6 +30,9 @@
     
             <label for="subject">Asunto</label>
             <input type="text" name="subject">
+
+            <label for="subject">Numero de telefono</label>
+            <input type="tel" name="cell phone">
     
             <label for="comments">Comentarios (cajas, bolsas, stickers, etc)</label>
             <textarea name="comments" cols="15" rows="5"></textarea>
@@ -38,6 +41,9 @@
             <input type="file" name="adjunto">
     
             <input type="submit" value="Enviar">
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+            <input type="hidden" name="_captcha" value="false">
         </form>
     </div>
     
