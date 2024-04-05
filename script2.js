@@ -20,27 +20,31 @@ function closeBox(title) {
 }
 
 
-let cartItems = [];
-let cartCounter = document.getElementById('cart-counter');
+const form = document.getElementById('myForm');
+const popup = document.getElementById('popup');
+const closeButton = document.getElementById('closeButton');
 
-function addToCart(productName) {
-    cartItems.push(productName);
-    renderCart();
-    updateCartCounter();
-}
+form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Evitar el envío normal del formulario
 
-function renderCart() {
-    const cartElement = document.getElementById('cart');
-    cartElement.innerHTML = '';
-    cartItems.forEach(item => {
-        const itemElement = document.createElement('div');
-        itemElement.textContent = item;
-        cartElement.appendChild(itemElement);
-    });
-}
+    // Aquí puedes hacer cualquier otra cosa que necesites con los datos del formulario
 
-function updateCartCounter() {
-    cartCounter.textContent = cartItems.length;
-}
+    // Mostrar el cuadro emergente
+    popup.style.display = 'block';
+});
+
+closeButton.addEventListener('click', function() {
+    // Ocultar el cuadro emergente
+    popup.style.display = 'none';
+});
+
+// Redirigir a la página de inicio al hacer clic en el botón de cerrar
+closeButton.addEventListener('click', function() {
+    window.location.href = 'index.html'; // Cambia 'index.html' al nombre de tu página de inicio si es diferente
+});
+
+
+
+
 
 
